@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Scrub on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#"><img src="assets/logo.svg" alt="Logo" class="logo" /></a>
+        <button class="hamburger">
+            <img src="assets/hamburger-icon.svg" alt="Menu" class="hamburger-icon" />
+        </button>
+        <nav class="nav">
+            <div class="nav-items">
+                <div href="#aiaas" class="nav-item has-submenu">
+                    <span>AI</span>aaS
+
+                    <div class="submenu">
+                        <a href="solution.html" class="submenu-item">Strategic <span>AI</span> Advisory</a>
+                        <a href="#aais" class="submenu-item">Advanced <span>AI</span> Solutions</a>
+                        <a href="#caid" class="submenu-item">Comprehensive <span>AI</span> Delivery</a>
+                        <a href="#aisc" class="submenu-item"> <span>AI</span> Security & Compliance</a>
+                    </div>
+                    <img class="submenu-toggle" alt="arrow icon" src="assets/m_down_icon.svg" />
+                    <div class="line-div"></div>
+                </div>
+                <div href="#our-foundations" class="nav-item has-submenu">
+                    Our Found<span>A</span>t<span>I</span>ons
+                    <div class="submenu">
+                        <a href="#journey" class="submenu-item">Our Journey</a>
+                        <a href="#innovators" class="submenu-item">The Innovators</a>
+                        <a href="#future" class="submenu-item">Work for the future</a>
+                        <a href="#partnership" class="submenu-item">Partnership</a>
+                        <a href="#csr" class="submenu-item">CSR</a>
+                    </div>
+                    <img class="submenu-toggle" alt="arrow icon" src="assets/m_down_icon.svg" />
+                    <div class="line-div"></div>
+                </div>
+                <div href="#materials" class="nav-item has-submenu">
+                    M<span>A</span>ter<span>I</span>als
+                    <div class="submenu">
+                        <a href="#blogs" class="submenu-item">Blogs</a>
+                        <a href="#whitepapers" class="submenu-item">Whitepapers</a>
+                        <a href="#impact-stories" class="submenu-item">Impact stories</a>
+                    </div>
+                    <img class="submenu-toggle" alt="arrow icon" src="assets/m_down_icon.svg" />
+                    <div class="line-div"></div>
+                </div>
+                <a href="#ceo-articulating" class="nav-item">CEO Articul<span>A</span>t<span>I</span>ng…</a>
+                <a href="#align-with-us" class="nav-item"><span>A</span>l<span>I</span>gn with us</a>
+            </div>
+        </nav>
+    </header>
+    <div class="scroll-container">
+        <div class="video-container">
+            <video src="./scrub.mp4" preload="auto" muted></video>
+        </div>
+        <div class="button-container" id="button1">
+            <button onclick="alert('Button at 2 seconds!')">Let's <span>AI</span> it</button>
+        </div>
+        <div class="button-container" id="button2">
+            <button onclick="alert('Button at 5 seconds!')">Let's drive into it?</button>
+        </div>
+        <div class="button-container" id="button3">
+            <button onclick="alert('Button at 8 seconds!')">Take the test!</button>
+        </div>
+        <div class="button-container" id="button4">
+            <button onclick="alert('Button at 8 seconds!')">Explore More!</button>
+        </div>
+
+        <div class="button-container" id="button5">
+            <button onclick="alert('Button at 8 seconds!')">Get Expert Insights</button>
+        </div>
+        <div class="button-container" id="button6">
+            <button onclick="alert('Button at 8 seconds!')">Know the story</button>
+        </div>
+        <div class="button-container" id="button7">
+            <button onclick="alert('Button at 8 seconds!')">Dive In</button>
+        </div>
+
+        <div class="button-container" id="button8">
+            <button onclick="alert('Button at 8 seconds!')">AI AI Captian!</button>
+        </div>
+        <div class="button-container" id="button9">
+            <div class="feature-section-container">
+                <div class="feature-section">
+                    <h3>
+                        Unified Data Insights
+                        <img src="./assets/m_down_icon.svg" alt="Toggle Arrow" class="toggle-icon" />
+                    </h3>
+                    <div class="feature-content">
+                        <p>SAIGE synthesizes data from all your systems, offering you a real-time, comprehensive view
+                            that fuels informed decision-making.</p>
+                    </div>
+                </div>
+                <div class="feature-section">
+                    <h3>
+                        Strategic Intelligence
+                        <img src="./assets/m_down_icon.svg" alt="Toggle Arrow" class="toggle-icon" />
+                    </h3>
+                    <div class="feature-content">
+                        <p>Our analytics aren’t just numbers; they’re wisdom. SAIGE delivers insights that help you
+                            anticipate change and seize opportunities.</p>
+                    </div>
+                </div>
+                <div class="feature-section">
+                    <h3>
+                        Scalable Power
+                        <img src="./assets/m_down_icon.svg" alt="Toggle Arrow" class="toggle-icon" />
+                    </h3>
+                    <div class="feature-content">
+                        <p>As your ambitions expand, so does SAIGE, providing a robust, flexible platform that’s ready
+                            for every stage of your journey.</p>
+                    </div>
+                </div>
+                <div class="feature-section">
+                    <h3>
+                        Tailored Dashboards
+                        <img src="./assets/m_down_icon.svg" alt="Toggle Arrow" class="toggle-icon" />
+                    </h3>
+                    <div class="feature-content">
+                        <p>Personalize SAIGE to match your exact needs, with customized interfaces that empower your
+                            team to act with confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
