@@ -1,0 +1,494 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "General Sans", sans-serif;
+}
+.scroll-container {
+  height: 300vh;
+}
+
+.video-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-item span {
+  color: var(--redAccent);
+}
+.button-container span {
+  color: var(--redAccent);
+}
+.button-container {
+  position: fixed;
+  display: none;
+  z-index: 1;
+}
+.button-container.active {
+  display: block;
+}
+/* Individual button positions */
+/* Reset default button styles */
+button {
+  all: unset; /* Resets all styles to remove browser defaults */
+  display: inline-block; /* Ensures button is still displayed inline */
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Individual button positions */
+/* Individual button positions */
+#button1 {
+  bottom: calc(100% - 75%); /* Adjusts the vertical position */
+  left: calc(
+    50% - 80px
+  ); /* Centers the button horizontally (50% of screen width minus half the button width) */
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#button2 {
+  bottom: calc(100% - 55%);
+  right: calc(
+    85% - 16px
+  ); /* Adjusts position by subtracting the button width */
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px; /* Custom background color for button 2 */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#button3 {
+  bottom: calc(100% - 55%);
+  left: calc(50% - 80px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button4 {
+  bottom: calc(100% - 58%);
+  left: calc(50% - 80px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button5 {
+  bottom: calc(100% - 38%);
+  left: calc(50% - 745px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button6 {
+  bottom: calc(
+    100% - 38%
+  ); /* Adjust this formula to match the original position */
+  left: calc(50% - 745px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button7 {
+  bottom: calc(100% - 50%);
+  left: calc(50% - 745px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button8 {
+  bottom: calc(100% - 68%);
+  left: calc(50% - 745px);
+  background-color: #fddd5b; /* Custom background color */
+  border-radius: 6px;
+}
+#button9 {
+  bottom: calc(100% - 55%);
+  right: calc(50% - 600px);
+  border-radius: 6px;
+}
+.feature-section-container {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.feature-section {
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin: 18px 0;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-section h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-section.active {
+  background: #f3f3f3;
+}
+
+.feature-section .feature-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 100;
+}
+
+.feature-section.active .feature-content {
+  max-height: 200px;
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.feature-section.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Remove focus outline */
+button:focus {
+  outline: none;
+}
+
+/* Optionally, add custom focus styling */
+button:focus-visible {
+  outline: 2px solid #fff; /* Optional: add white outline on focus */
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+:root {
+  --black: #000000;
+  --darkGray: #1e1e1e;
+  --mediumGray: #303030;
+  --redAccent: #ce080a;
+  --lightGray: #f1f1f1;
+  --yellowAccent: #fddd5b;
+  --white: #ffffff;
+
+  --font-size-12-xxs: 12px;
+  --font-size-14-xs: 14px;
+  --font-size-16-sm: 16px;
+  --font-size-18-md: 18px;
+  --font-size-20-lg: 20px;
+  --font-size-24-xl: 24px;
+  --font-size-40-xxl: 40px;
+  --font-size-96-xxxl: 96px;
+}
+
+/* navbar */
+/* Anchor tag */
+.nav a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 33px;
+  left: 33px;
+  width: 127px;
+  height: 20.266px;
+  flex-shrink: 0;
+}
+
+/* Hamburger Button Wrapper - For Small Screens */
+.hamburger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-color: var(--lightGray);
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  cursor: pointer;
+}
+
+/* Hamburger Icon Image */
+.hamburger-icon {
+  width: 10px;
+  height: 8px;
+  flex-shrink: 0;
+  display: block;
+  margin: auto;
+}
+
+/* Navigation Wrapper */
+.nav {
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 40px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+/* Nav Items and Sub-Items */
+.nav-item {
+  color: var(--black);
+  text-align: center;
+  font-size: var(--font-size-14-xs);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.42px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+  background-color: var(--lightGray);
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+/* Style for the last nav item */
+.nav-items .nav-item:last-child {
+  background-color: var(--yellowAccent);
+  border-radius: 10px;
+}
+
+.has-submenu {
+  position: relative;
+  display: inline-block;
+}
+/* Submenu Wrapper */
+.submenu {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 38px; /* Positions the submenu right below the parent item */
+  right: 0;
+  background-color: var(--lightGray);
+  list-style: none;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 0;
+  z-index: 1;
+  transform: translateY(10px); /* Shift submenu slightly down */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for smooth appearance */
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Submenu Items */
+.submenu-item {
+  padding: 8px 16px;
+  color: var(--black);
+  text-align: left;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.42px;
+  cursor: pointer;
+}
+
+/* desktop view: enable hover effect */
+@media (min-width: 768px) {
+  /* show submenu on hover */
+  .has-submenu:hover .submenu {
+    opacity: 1; /* Makes submenu visible */
+    transform: translateY(0); /* Reset position for smooth slide-in effect */
+    pointer-events: auto; /* Allows interaction on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .submenu-item:hover {
+    transform: scale(1.06);
+    transition: 0.2s;
+  }
+
+  /* hover effect for nav items */
+  .nav-item:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* submenu toggle arrow - for mobile view */
+.submenu-toggle {
+  display: none;
+  justify-content: end;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  background-color: var(--white);
+  border: none;
+  padding: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 14px;
+  right: 14px;
+}
+
+/* responsive styles using media query - mobile and smaller screens */
+@media (max-width: 767px) {
+  /* display hamburger button for mobile/tablet */
+  .hamburger {
+    display: block;
+  }
+
+  /* hide default nav style in mobile view */
+  .nav {
+    display: none;
+  }
+
+  /* hide submenu unless menu is clicked in mobile view */
+  .has-submenu .submenu {
+    display: none;
+  }
+
+  /* up/down arrow icon on mobile nav items */
+  .submenu-toggle {
+    display: block;
+  }
+
+  .open .line-div {
+    position: absolute;
+    top: 39.5px;
+    left: 11.5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 203px;
+    height: 1px;
+  }
+
+  /* nav styling for mobile */
+  .nav-item {
+    width: 227px;
+    color: var(--black);
+    text-align: left;
+    transition: color 0.2s, background-color 0.2s;
+    /* Rectangle styling */
+    background-color: var(--white);
+    padding: 10px 16px;
+  }
+
+  .nav-item:hover {
+    background-color: var(--white);
+  }
+
+  .submenu-item {
+    letter-spacing: -0.36px;
+    cursor: pointer;
+  }
+
+  /* Show nav when hamburger icon is clicked */
+  .nav-active .nav {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    top: 60px;
+    right: 10px;
+    border-radius: 10px;
+    background: var(--lightGray);
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    height: auto;
+  }
+
+  /* Display nav items in column */
+  .nav-items {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    justify-content: left;
+  }
+
+  .nav-items .nav-item:last-child {
+    width: 106px;
+  }
+
+  /* Display submenu items in column when selected */
+  .has-submenu.open .submenu {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    z-index: 1;
+    opacity: 1; /* Makes submenu visible */
+    pointer-events: auto;
+  }
+
+  .open .submenu-toggle {
+    transform: rotate(180deg) scaleX(-1);
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    color: var(--mediumGray);
+  }
+}
+
+/* Tablets and iPads */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .main-section {
+    padding: 48px;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    color: var(--mediumGray);
+  }
+}
